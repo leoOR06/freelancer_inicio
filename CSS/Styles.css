@@ -1,3 +1,31 @@
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 16px;
+}
+
 h1 {
     text-align: center;
+    font-size: 3.8rem;
 }
+
+span{
+    font-size: 2rem;
+}
+
+/*
+Selector de atributo 
+Selecciona elemtnos basados en algún atributo que tenga.
+[src="Logo.jpg"]{
+    color: blue;
+}
+
+
+todos los hijos
+Aplica la siguiente regla a todos los párrafos hijos 
+.cliente < p {
+    color: bluie;
+}
+*/
