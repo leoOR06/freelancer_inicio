@@ -33,9 +33,15 @@ body{
 
 
 
-/*.navegacion-principal{
+.navegacion-principal{
+    padding: 1rem;
+}
 
-}*/
+.navegacion-principal a{
+color: var(--blanco);
+text-decoration: none; /*elimina la línea debajo de los elementos de la barra de navegación*/
+
+}
 
 .contenedor{
     width: 120rem;
@@ -48,6 +54,11 @@ body{
 .nav-bg{
     background-color: var(--secundario);
 }
+
+/* DISPLAY: BLOCK; El elemento se colocará debajo del otro sin importar su tamañp o contenido
+/*DISPLAY: INLINE; El elemento se posicionará a la derecha una vez que haya tomado el espacio que requiere
+
+
 
 /*
 Selector de atributo 
