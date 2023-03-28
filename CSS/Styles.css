@@ -31,6 +31,24 @@ body{
     font-size: 2rem;
 }
 
+
+
+/*.navegacion-principal{
+
+}*/
+
+.contenedor{
+    width: 120rem;
+    margin-top: 0;
+    margin-right: auto; /*Necesita tener un margin auto en left y right para que se centre*/
+    margin-bottom: 0;
+    margin-left: auto;
+}
+
+.nav-bg{
+    background-color: var(--secundario);
+}
+
 /*
 Selector de atributo 
 Selecciona elemtnos basados en algún atributo que tenga.
