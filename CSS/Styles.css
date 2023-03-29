@@ -34,7 +34,7 @@ body{
 
 
 .navegacion-principal{
-    padding: 1rem;
+    
     display: flex; /*se usa en el contenedor padre*/
     justify-content: space-between; /*Para justificar a los hijos se específica desde el mismo elemento padre*/
     /* la propiedad felx-direction:row indica a que sentido se alinearan los elementos, ya sea en columna o el fila */
@@ -44,7 +44,9 @@ body{
 .navegacion-principal a{
 color: var(--blanco);
 text-decoration: none; /*elimina la línea debajo de los elementos de la barra de navegación*/
-
+font-size: 2rem;
+font-weight: bold;
+padding: 1rem;
 }
 
 .contenedor{
@@ -58,6 +60,40 @@ text-decoration: none; /*elimina la línea debajo de los elementos de la barra d
 .nav-bg{
     background-color: var(--secundario);
 }
+
+.navegacion-principal a:hover{/*se usa un hover pseudoclase para que el botón se sombree cuando se pasa el mouse sobr eel botón*/
+
+background-color:var(--primario) ;
+color: var(--oscuro);
+}
+
+
+/*ESTILO BEM, BLOQUES, ELEMENTOS, MODIFICADORES
+{
+    .card{} BLOQUE
+    .card__titulo{}ELEMENTOS
+    .card__imagen{}
+    .card__boton{}
+    .card__boton--activo{} MODIFICADORES
+}
+*/
+
+/*ESTILO UTILITY FIRST
+Se crean clases con una sola propiedad que describe que haría
+text-center{}
+color-red-100{}
+*/
+
+
+/*ESTILO DE MODULOS
+Se define el estilo principal y los elementos
+
+.card{}
+.card h2{}
+.card img{}
+
+
+*/
 
 /* DISPLAY: BLOCK; El elemento se colocará debajo del otro sin importar su tamañp o contenido
 /*DISPLAY: INLINE; El elemento se posicionará a la derecha una vez que haya tomado el espacio que requiere
