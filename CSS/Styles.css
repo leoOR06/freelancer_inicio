@@ -111,6 +111,6 @@ Selecciona elemtnos basados en algún atributo que tenga.
 todos los hijos
 Aplica la siguiente regla a todos los párrafos hijos 
 .cliente < p {
-    color: bluie;
+    color: blue;
 }
 */
