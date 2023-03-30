@@ -82,6 +82,11 @@ background-color:var(--primario) ;
 color: var(--oscuro);
 }
 
+.hero{
+    background-image: url(../img/hero.jpg);
+    background-repeat: repeat;
+    background-size: cover;/*va a llenar todo el ancho de la pantalla y se ve la imagen cxompleta*/
+}
 
 /*ESTILO BEM, BLOQUES, ELEMENTOS, MODIFICADORES
 {
