@@ -36,12 +36,27 @@ body{
 .navegacion-principal{
     
     display: flex; /*se usa en el contenedor padre*/
-    justify-content: space-between; /*Para justificar a los hijos se específica desde el mismo elemento padre*/
+    flex-direction: column;
+     /*Para justificar a los hijos se específica desde el mismo elemento padre*/
     /* la propiedad felx-direction:row indica a que sentido se alinearan los elementos, ya sea en columna o el fila */
     /*ALIGN-ITEMS sirve para las columnas, mientras que justify-content es para las filas*/
+   /* align-items: center; para centrar los elementos de navegación en columna*/
 }
 
+@media (min-width: 768px){
+ .navegacion-principal{
+    flex-direction: row;
+    justify-content: space-between;
+ }
+
+}
+
+
+
+
 .navegacion-principal a{
+ display: block;/*Opción para alinear los elementos de la barra de navegación
+ */text-align: center;   
 color: var(--blanco);
 text-decoration: none; /*elimina la línea debajo de los elementos de la barra de navegación*/
 font-size: 2rem;
@@ -50,7 +65,7 @@ padding: 1rem;
 }
 
 .contenedor{
-    width: 120rem;
+    max-width: 120rem;
     margin-top: 0;
     margin-right: auto; /*Necesita tener un margin auto en left y right para que se centre*/
     margin-bottom: 0;
