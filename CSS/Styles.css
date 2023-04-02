@@ -13,7 +13,27 @@
 
 html{
     font-size: 62.5%;
+    box-sizing:border-box ;
 }
+
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+/*
+- el asterisco es un selector universal, el box sising borderbox
+hace que no afecte el tamaño del elemento el uso de padding con los tamaños de width
+- la coma significa que difernetes nombres de clases pueden aplicar un mismo codigo
+-Before En CSS, ::before crea un 
+pseudoelemento que es el primer hijo del
+ elemento seleccionado. Es usado 
+ normalmente para añadir contenido 
+ estético a un elemento, usando la 
+ propiedad content. Este elemento se 
+ muestra en línea con el texto de forma 
+ predeterminada.
+*/
+
 
 body{
     font-size: 16px;
@@ -87,6 +107,10 @@ color: var(--oscuro);
     background-repeat: repeat;
     background-size: cover;/*va a llenar todo el ancho de la pantalla y se ve la imagen cxompleta*/
 }
+
+
+
+
 
 /*ESTILO BEM, BLOQUES, ELEMENTOS, MODIFICADORES
 {
