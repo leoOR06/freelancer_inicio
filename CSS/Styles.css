@@ -57,6 +57,7 @@ body{
     
     display: flex; /*se usa en el contenedor padre*/
     flex-direction: column;
+   
      /*Para justificar a los hijos se específica desde el mismo elemento padre*/
     /* la propiedad felx-direction:row indica a que sentido se alinearan los elementos, ya sea en columna o el fila */
     /*ALIGN-ITEMS sirve para las columnas, mientras que justify-content es para las filas*/
@@ -106,6 +107,24 @@ color: var(--oscuro);
     background-image: url(../img/hero.jpg);
     background-repeat: repeat;
     background-size: cover;/*va a llenar todo el ancho de la pantalla y se ve la imagen cxompleta*/
+   height: 450px;
+   
+    position: relative;/*el padre siempre debe tener posición relativa*/
+    /*para que el hijo se posicione de forma absoluta*/
+}
+
+.contenido-hero{
+    position: absolute;
+    background-color: rgb(0, 0, 0,0.5);
+    /*new commwent*/
+    /*top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;*/
+    width: 100%;
+    height: 100%;
+    /*se puso en absolute para que tome las coordenadas
+    del conetendor padre que es relative*/
 }
 
 
