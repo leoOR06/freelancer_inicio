@@ -183,6 +183,18 @@ display: flex;
 align-items: flex-end;
 }
 
+/*Servicios*/
+
+
+@media (min-width:768px){
+    .servicios{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;/*es lo mismo que repeat(3, 1fr)*/
+        column-gap: 1rem;
+    }
+}
+
+
 /*ESTILO BEM, BLOQUES, ELEMENTOS, MODIFICADORES
 {
     .card{} BLOQUE
