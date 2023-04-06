@@ -14,6 +14,8 @@
 html{
     font-size: 62.5%;
     box-sizing:border-box ;
+    scroll-snap-type: y mandatory;/*hace que el ovimiento del scroll sea hasta la siguiente sección
+    completa, proximity hace que tengas que dar csroll de mas para cambiar a la siguiente seccion */
 }
 
 *, *:before, *:after {
@@ -202,6 +204,14 @@ color: var(--oscuro);
 .ubicacion{
 display: flex;
 align-items: flex-end;
+}
+/*scroll snap, sirve para la barra de navegación se detenga en cada secciín y no sea de corrido*/
+.servicios,
+.navegacion-principal,
+.formulario
+{
+    scroll-snap-align: center;
+    scroll-padding-top: always;
 }
 
 /*Servicios*/
