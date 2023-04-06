@@ -38,7 +38,8 @@ pseudoelemento que es el primer hijo del
 body{
     font-size: 16px;
     font-family: 'Krub', sans-serif;/*se ponen tres porque en caso de que no encuentre una fuente carga la siguiente*/
-
+    background-image: linear-gradient(to top, #DFE9F3 0%, var(--blanco) 100% );/*se debe utilizar esta etiqueta 
+    para hacer el degradado del fondo*/
 }
 
 h1{
