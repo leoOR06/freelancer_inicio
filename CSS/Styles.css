@@ -123,6 +123,16 @@ text-align: center;
     }
 }
 
+
+.sombra{
+    -webkit-box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.54);
+    -moz-box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.54);
+    box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.54);
+    background-color:var(--blanco) ;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
 .nav-bg{
     background-color: var(--secundario);
 }
@@ -141,6 +151,8 @@ color: var(--oscuro);
    
     position: relative;/*el padre siempre debe tener posición relativa*/
     /*para que el hijo se posicione de forma absoluta*/
+    margin-bottom: 2rem;/*para separar el contenido de la tarjeta
+    mis servicios*/
 }
 
 .contenido-hero{
